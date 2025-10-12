@@ -1,5 +1,5 @@
 // =======================================================
-// SCRIPT PRINCIPAL DEL CUESTIONARIO CCSE
+// SCRIPT PRINCIPAL DEL CUESTIONARIO CCSE (VERSIÓN DEFINITIVA)
 // =======================================================
 
 // --- VARIABLES GLOBALES ---
@@ -8,7 +8,7 @@ let correctAnswers = 0;
 let incorrectAnswers = 0;
 let quizData = [];
 
-// --- ELEMENTOS DEL DOM (CACHEADOS PARA EFICIENCIA) ---
+// --- ELEMENTOS DEL DOM ---
 const nextButton = document.getElementById('next-button');
 const questionArea = document.getElementById('question-area');
 const resultMessage = document.getElementById('result-message');
@@ -18,8 +18,8 @@ const resultMessage = document.getElementById('result-message');
  * Se ejecuta cuando la página está lista para determinar qué test cargar.
  */
 window.onload = function() {
-    // Si no estamos en la página del quiz, no hacemos nada.
-    if (!document.getElementById('quiz-content')) {
+    // Si no estamos en la página del quiz (ej. index.html), no hacemos nada.
+    if (!document.body.contains(questionArea)) {
         return;
     }
 
@@ -31,7 +31,8 @@ window.onload = function() {
         return;
     }
 
-    // Construye la ruta al archivo de datos JSON
+    // Construye la ruta al archivo de datos JSON.
+    // Esta ruta es relativa a la raíz del proyecto.
     const dataFile = `data/${quizType}.json`;
     loadQuizData(dataFile);
 };
@@ -85,8 +86,8 @@ function startQuiz() {
     currentQuestionIndex = 0;
     correctAnswers = 0;
     incorrectAnswers = 0;
-    nextButton.style.display = 'none';
-    resultMessage.textContent = '';
+    if (nextButton) nextButton.style.display = 'none';
+    if (resultMessage) resultMessage.textContent = '';
     displayCurrentQuestion();
 }
 
@@ -109,8 +110,8 @@ function displayCurrentQuestion() {
             button.addEventListener('click', () => checkAnswer(button, question));
         });
         
-        resultMessage.innerHTML = '';
-        nextButton.style.display = 'none';
+        if (resultMessage) resultMessage.innerHTML = '';
+        if (nextButton) nextButton.style.display = 'none';
 
     } else {
         showFinalResults();
@@ -144,7 +145,7 @@ function checkAnswer(selectedButton, question) {
         incorrectAnswers++;
     }
 
-    nextButton.style.display = 'block';
+    if (nextButton) nextButton.style.display = 'block';
 }
 
 /**
@@ -164,8 +165,8 @@ function showFinalResults() {
         </h3>
         <button class="button-link" onclick="startQuiz()">Repetir Test</button>
     `;
-    nextButton.style.display = 'none';
-    resultMessage.innerHTML = '';
+    if (nextButton) nextButton.style.display = 'none';
+    if (resultMessage) resultMessage.innerHTML = '';
 }
 
 // --- EVENT LISTENERS ---
