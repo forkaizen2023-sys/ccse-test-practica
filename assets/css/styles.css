@@ -1,5 +1,5 @@
 /* =======================================================
-   CONFIGURACIÓN GLOBAL Y VARIABLES
+   CONFIGURACIÓN GLOBAL Y VARIABLES (VERSIÓN FINAL)
    ======================================================= */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
@@ -19,10 +19,6 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--color-background);
     color: var(--color-text-primary);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
@@ -37,27 +33,30 @@ h1, h2 {
 /* =======================================================
    ESTRUCTURA Y CONTENEDORES PRINCIPALES
    ======================================================= */
-.header {
+/* 🔑 CORRECCIÓN CLAVE: Usamos margin: auto para centrar los bloques principales */
+.header, .main-container, .footer {
     width: 100%;
     max-width: var(--max-content-width);
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
     text-align: center;
     padding: 20px;
     margin-bottom: 20px;
     background-color: var(--color-container);
     box-shadow: 0 4px 12px var(--color-shadow);
     border-radius: 12px;
-    box-sizing: border-box;
 }
 
 .main-container {
-    width: 100%;
-    max-width: var(--max-content-width);
     background-color: var(--color-container);
     padding: 40px; 
     border-radius: 12px;
     box-shadow: 0 4px 12px var(--color-shadow);
     margin-bottom: 25px;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -65,11 +64,9 @@ h1, h2 {
 }
 
 .footer {
-    width: 100%;
-    max-width: var(--max-content-width);
     text-align: center;
     padding: 15px 0;
-    margin-top: auto;
+    margin-top: 25px;
     font-size: 0.9em;
     color: #777;
     border-top: 1px solid #e0e0e0;
@@ -100,16 +97,15 @@ h1, h2 {
 }
 
 /* =======================================================
-   ESTILOS ESPECÍFICOS DEL QUIZ
+   ESTILOS ESPECÍFICOS DEL QUIZ Y GUÍA
    ======================================================= */
-.quiz-container {
-    align-items: flex-start;
+.quiz-container, .guide-container {
+    align-items: flex-start; /* Alinea el contenido interno a la izquierda */
     text-align: left;
 }
 
 .question-text {
     font-size: 1.3em;
-    font-weight: 400;
     margin-bottom: 30px;
 }
 
@@ -166,13 +162,7 @@ h1, h2 {
     background-color: var(--color-button-hover);
 }
 
-/* =======================================================
-   ESTILOS PROFESIONALES PARA LA GUÍA DE ESTUDIO
-   ======================================================= */
-.guide-container {
-    align-items: flex-start;
-}
-
+/* --- Estilos para la Guía --- */
 .guide-intro {
     width: 100%;
     text-align: center;
@@ -224,7 +214,7 @@ h1, h2 {
 }
 
 /* =======================================================
-   ESTILOS MEJORADOS PARA LA PÁGINA DE DONACIONES
+   ESTILOS PÁGINA DE DONACIONES
    ======================================================= */
 .donation-intro {
     text-align: center;
