@@ -289,5 +289,21 @@ h1, h2 {
 
     .question-text {
         font-size: 1.15em;
-    }
+    }/* =======================================================
+   CORRECCIONES FINALES DE LAYOUT PARA EL QUIZ
+   ======================================================= */
+
+/* Centra el contenedor de los botones del quiz */
+.quiz-controls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Asegura que el botón de repetir en los resultados también use el estilo de botón principal */
+#question-area .button-link {
+    margin-left: auto;
+    margin-right: auto;
+}
 }
