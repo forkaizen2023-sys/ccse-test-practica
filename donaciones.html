@@ -5,29 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Un café para el desarrollador?</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <style>
-        /* Pequeño estilo adicional para el emoji */
-        .coffee-button-icon {
-            margin-left: 8px;
-            font-size: 1.2em;
-            vertical-align: middle;
-        }
-    </style>
 </head>
 <body>
-    <div class="quiz-container">
-        <h1>¿Te ha sido útil esta herramienta?</h1>
-        
-        <p>Mantener este sitio funcionando y actualizado con las últimas preguntas requiere muchas horas de trabajo y dedicación.</p>
-        <p>Si esta herramienta te ha ayudado a prepararte, puedes agradecérmelo invitándome un café. ¡Cada pequeña ayuda me da la energía para seguir mejorando el proyecto para todos!</p>
-        
-        <a href="https://www.paypal.com/donate/?business=2H25XEQ3V6G4Y&no_recurring=0&item_name=Si+esta+herramienta+te+ha+sido+%C3%BAtil%2C+considera+una+donaci%C3%B3n+para+mantenerla+actualizada.+Gracias+&currency_code=EUR" 
-           target="_blank" 
-           class="button-link donate-paypal-button">
-           Invítame un café con PayPal <span class="coffee-button-icon">☕</span>
-        </a>
+    <header class="header">
+        <h1>Apoya el Futuro de esta Herramienta</h1>
+    </header>
 
-        <a href="index.html" class="button-link">Volver a la página principal</a>
+    <main class="main-container">
+        <div class="donation-intro">
+            <span class="donation-icon">☕</span>
+            <h2>¿Te ha sido útil para tu examen?</h2>
+            <p>Mantener este sitio actualizado y sin anuncios molestos requiere tiempo y recursos. Si te ha ayudado, considera invitarme un café para darme la energía necesaria para seguir mejorando el proyecto.</p>
+        </div>
+
+        <div class="donation-options">
+            <h3>Elige tu aportación con PayPal:</h3>
+            <div class="donation-buttons">
+                <a href="https://www.paypal.com/donate/?business=2H25XEQ3V6G4Y&no_recurring=0&item_name=Un+café+para+el+desarrollador&currency_code=EUR" target="_blank" class="button-link donation-tier">
+                    Un Café <span class="price">(~2€)</span>
+                </a>
+                <a href="https://www.paypal.com/donate/?business=2H25XEQ3V6G4Y&no_recurring=0&item_name=Un+buen+desayuno+para+el+desarrollador&currency_code=EUR" target="_blank" class="button-link donation-tier">
+                    Un Desayuno <span class="price">(~5€)</span>
+                </a>
+                <a href="https://www.paypal.com/donate/?business=2H25XEQ3V6G4Y&no_recurring=0&item_name=Apoyo+para+mantener+el+servidor&currency_code=EUR" target="_blank" class="button-link donation-tier">
+                    Apoyo al Servidor <span class="price">(~10€)</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="alternative-donations">
+            <h3>Otras formas de apoyar</h3>
+            <p>También puedes usar otras plataformas o directamente con Bizum.</p>
+            <a href="https://www.buymeacoffee.com/TU_USUARIO" target="_blank" class="button-link alternative-button">Invítame un Café en "BuyMeaCoffee.com"</a>
+            
+            <div class="bizum-section">
+                <p><strong>O escanea el código QR para Bizum:</strong></p>
+                <img src="assets/images/bizum-qr.png" alt="Código QR para donar con Bizum" style="max-width: 150px; margin-top: 10px;">
+            </div>
+        </div>
+    </main>
+
+    <div class="donations-container" style="background: none; box-shadow: none; padding-top: 0;">
+        <a href="index.html" class="button-link" role="button">Volver al Menú Principal</a>
     </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 CCSE Práctica. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
