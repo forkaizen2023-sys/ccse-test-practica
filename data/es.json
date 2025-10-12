@@ -2,86 +2,227 @@
   "questions": [
     {
       "questionNumber": 1,
-      "question": "España es:",
+      "question": "La forma política del Estado español es:",
       "answerOptions": [
-        {
-          "text": "a. una monarquía parlamentaria",
-          "isCorrect": true,
-          "rationale": "La Constitución española de 1978 establece que la forma política del Estado español es la monarquía parlamentaria."
-        },
-        {
-          "text": "b. una República Federal",
-          "isCorrect": false,
-          "rationale": "España no es una República Federal. La jefatura del Estado recae en el Rey, y la soberanía en el pueblo español."
-        },
-        {
-          "text": "c. una monarquía Federal",
-          "isCorrect": false,
-          "rationale": "Aunque se organiza en comunidades autónomas, España no es una monarquía federal, sino parlamentaria."
-        }
+        { "text": "a) La República federal", "isCorrect": false },
+        { "text": "b) La monarquía parlamentaria", "isCorrect": true, "rationale": "Según la Constitución de 1978, España es una monarquía parlamentaria." },
+        { "text": "c) La monarquía absoluta", "isCorrect": false }
       ]
     },
     {
       "questionNumber": 2,
+      "question": "La soberanía nacional reside en:",
+      "answerOptions": [
+        { "text": "a) El Rey", "isCorrect": false },
+        { "text": "b) Las Cortes Generales", "isCorrect": false },
+        { "text": "c) El pueblo español", "isCorrect": true, "rationale": "La soberanía nacional reside en el pueblo español, del que emanan los poderes del Estado." }
+      ]
+    },
+    {
+      "questionNumber": 3,
       "question": "La ley fundamental de España se llama:",
       "answerOptions": [
-        {
-          "text": "a. Constitución",
-          "isCorrect": true,
-          "rationale": "La Constitución es la norma jurídica suprema de España, a la que están sujetas todas las leyes y normas."
-        },
-        {
-          "text": "b. ley del Estado",
-          "isCorrect": false,
-          "rationale": "No existe una 'ley del Estado' como tal; la norma suprema es la Constitución."
-        },
-        {
-          "text": "c. código civil",
-          "isCorrect": false,
-          "rationale": "El Código Civil es una ley muy importante, pero está subordinada a la Constitución."
-        }
+        { "text": "a) El Estatuto de Autonomía", "isCorrect": false },
+        { "text": "b) La Constitución", "isCorrect": true, "rationale": "La Constitución de 1978 es la norma suprema del ordenamiento jurídico español." },
+        { "text": "c) El Código Civil", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 4,
+      "question": "El poder legislativo lo ejercen:",
+      "answerOptions": [
+        { "text": "a) El Gobierno", "isCorrect": false },
+        { "text": "b) Las Cortes Generales", "isCorrect": true, "rationale": "Las Cortes Generales (Congreso y Senado) representan al pueblo español y ejercen la potestad legislativa." },
+        { "text": "c) Los Jueces y Magistrados", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 5,
+      "question": "El jefe del Estado es:",
+      "answerOptions": [
+        { "text": "a) El presidente del Gobierno", "isCorrect": false },
+        { "text": "b) El Rey", "isCorrect": true, "rationale": "El Rey es el Jefe del Estado, símbolo de su unidad y permanencia." },
+        { "text": "c) El presidente del Congreso", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 6,
+      "question": "¿Cuántas Comunidades Autónomas tiene España?",
+      "answerOptions": [
+        { "text": "a) 15", "isCorrect": false },
+        { "text": "b) 17", "isCorrect": true, "rationale": "España se organiza territorialmente en 17 Comunidades Autónomas y 2 Ciudades Autónomas (Ceuta y Melilla)." },
+        { "text": "c) 19", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 7,
+      "question": "La bandera de España tiene tres franjas horizontales de colores:",
+      "answerOptions": [
+        { "text": "a) Rojo, amarillo y rojo", "isCorrect": true, "rationale": "La franja amarilla es de doble anchura que cada una de las rojas." },
+        { "text": "b) Rojo, gualda y rojo", "isCorrect": true, "rationale": "Gualda es el nombre técnico del color amarillo de la bandera." },
+        { "text": "c) Amarillo, rojo y amarillo", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 8,
+      "question": "La Fiesta Nacional de España se celebra el:",
+      "answerOptions": [
+        { "text": "a) 6 de diciembre", "isCorrect": false },
+        { "text": "b) 12 de octubre", "isCorrect": true, "rationale": "El 12 de octubre se conmemora la efeméride del descubrimiento de América." },
+        { "text": "c) 1 de mayo", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 9,
+      "question": "El castellano es la lengua española oficial...",
+      "answerOptions": [
+        { "text": "a) de una parte del territorio del Estado", "isCorrect": false },
+        { "text": "b) de todo el territorio del Estado", "isCorrect": true, "rationale": "Todos los españoles tienen el deber de conocerla y el derecho a usarla." },
+        { "text": "c) solo en las Comunidades Autónomas sin otra lengua cooficial", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 10,
+      "question": "La mayoría de edad en España se alcanza a los:",
+      "answerOptions": [
+        { "text": "a) 16 años", "isCorrect": false },
+        { "text": "b) 18 años", "isCorrect": true, "rationale": "La mayoría de edad se alcanza a los dieciocho años según la Constitución." },
+        { "text": "c) 21 años", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 11,
+      "question": "El poder ejecutivo lo ejerce:",
+      "answerOptions": [
+        { "text": "a) El Gobierno", "isCorrect": true, "rationale": "El Gobierno dirige la política interior y exterior, la Administración civil y militar y la defensa del Estado." },
+        { "text": "b) El Congreso de los Diputados", "isCorrect": false },
+        { "text": "c) El Consejo General del Poder Judicial", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 12,
+      "question": "El número de teléfono único de asistencia al ciudadano ante cualquier emergencia en España es el:",
+      "answerOptions": [
+        { "text": "a) 091", "isCorrect": false },
+        { "text": "b) 112", "isCorrect": true, "rationale": "El 112 es el teléfono de emergencias coordinado en todo el territorio de la Unión Europea." },
+        { "text": "c) 062", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 13,
+      "question": "El organismo que se encarga de la recaudación de los impuestos estatales en España es:",
+      "answerOptions": [
+        { "text": "a) El Banco de España", "isCorrect": false },
+        { "text": "b) El Ministerio de Hacienda", "isCorrect": false },
+        { "text": "c) La Agencia Tributaria", "isCorrect": true, "rationale": "La Agencia Tributaria es el ente encargado de la gestión del sistema tributario y aduanero estatal." }
+      ]
+    },
+    {
+      "questionNumber": 14,
+      "question": "El DNI (Documento Nacional de Identidad) se expide por:",
+      "answerOptions": [
+        { "text": "a) La Guardia Civil", "isCorrect": false },
+        { "text": "b) La Policía Nacional", "isCorrect": true, "rationale": "La Dirección General de la Policía es la competente para la expedición del DNI y el Pasaporte." },
+        { "text": "c) El Ayuntamiento", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 15,
+      "question": "¿Quién es el autor de la famosa obra literaria 'El Quijote'?",
+      "answerOptions": [
+        { "text": "a) Lope de Vega", "isCorrect": false },
+        { "text": "b) Miguel de Cervantes", "isCorrect": true, "rationale": "Miguel de Cervantes Saavedra es el autor de 'El ingenioso hidalgo don Quijote de la Mancha'." },
+        { "text": "c) Francisco de Quevedo", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 16,
+      "question": "El Instituto Cervantes es la institución pública para la promoción y enseñanza de:",
+      "answerOptions": [
+        { "text": "a) La cultura española y la lengua castellana", "isCorrect": true, "rationale": "Su objetivo es la promoción y la enseñanza de la lengua española y la difusión de la cultura de España e Hispanoamérica." },
+        { "text": "b) Las ciencias y las artes", "isCorrect": false },
+        { "text": "c) La historia de España", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 17,
+      "question": "¿Cuál de estas ciudades es famosa por sus fiestas de 'San Fermín'?",
+      "answerOptions": [
+        { "text": "a) Sevilla", "isCorrect": false },
+        { "text": "b) Valencia", "isCorrect": false },
+        { "text": "c) Pamplona", "isCorrect": true, "rationale": "Los Sanfermines son unas fiestas en honor a San Fermín que se celebran anualmente en Pamplona." }
+      ]
+    },
+    {
+      "questionNumber": 18,
+      "question": "El Museo del Prado, uno de los más importantes del mundo, se encuentra en:",
+      "answerOptions": [
+        { "text": "a) Barcelona", "isCorrect": false },
+        { "text": "b) Madrid", "isCorrect": true, "rationale": "El Museo Nacional del Prado es uno de los principales atractivos turísticos de Madrid." },
+        { "text": "c) Bilbao", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 19,
+      "question": "En España, la educación básica es:",
+      "answerOptions": [
+        { "text": "a) Voluntaria y gratuita", "isCorrect": false },
+        { "text": "b) Obligatoria y de pago", "isCorrect": false },
+        { "text": "c) Obligatoria y gratuita", "isCorrect": true, "rationale": "La Constitución garantiza el derecho a la educación y establece la enseñanza básica como obligatoria y gratuita." }
+      ]
+    },
+    {
+      "questionNumber": 20,
+      "question": "El poder judicial está constituido por:",
+      "answerOptions": [
+        { "text": "a) Los abogados y procuradores", "isCorrect": false },
+        { "text": "b) Los jueces y magistrados", "isCorrect": true, "rationale": "La justicia emana del pueblo y se administra en nombre del Rey por Jueces y Magistrados." },
+        { "text": "c) El Ministerio de Justicia", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 21,
+      "question": "La institución que defiende los derechos de los ciudadanos ante los abusos de la Administración es:",
+      "answerOptions": [
+        { "text": "a) El Defensor del Pueblo", "isCorrect": true, "rationale": "Es el alto comisionado de las Cortes Generales encargado de defender los derechos fundamentales." },
+        { "text": "b) El Tribunal de Cuentas", "isCorrect": false },
+        { "text": "c) El Consejo de Estado", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 22,
+      "question": "¿Cuál de estos platos es típico de la Comunidad Valenciana?",
+      "answerOptions": [
+        { "text": "a) El pulpo a la gallega", "isCorrect": false },
+        { "text": "b) La paella", "isCorrect": true, "rationale": "La paella es un plato a base de arroz originario de la Comunidad Valenciana." },
+        { "text": "c) El gazpacho", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 23,
+      "question": "El presidente del Gobierno es elegido por:",
+      "answerOptions": [
+        { "text": "a) El Rey", "isCorrect": false },
+        { "text": "b) El pueblo en elecciones directas", "isCorrect": false },
+        { "text": "c) El Congreso de los Diputados", "isCorrect": true, "rationale": "El candidato propuesto por el Rey debe recibir la confianza de la mayoría del Congreso." }
       ]
     },
     {
       "questionNumber": 24,
       "question": "Las Cortes Generales representan al:",
       "answerOptions": [
-        {
-          "text": "a. pueblo español",
-          "isCorrect": true,
-          "rationale": "La Constitución establece que las Cortes Generales representan al pueblo español y están formadas por el Congreso de los Diputados y el Senado."
-        },
-        {
-          "text": "b. a los partidos políticos",
-          "isCorrect": false,
-          "rationale": "Las Cortes Generales están formadas por miembros de partidos políticos, pero su función es representar a toda la ciudadanía."
-        },
-        {
-          "text": "c. a los ministros",
-          "isCorrect": false,
-          "rationale": "Los ministros forman parte del Gobierno, que es un poder distinto al legislativo."
-        }
+        { "text": "a) pueblo español", "isCorrect": true, "rationale": "La Constitución establece que las Cortes Generales representan al pueblo español." },
+        { "text": "b) a los partidos políticos", "isCorrect": false },
+        { "text": "c) a los ministros", "isCorrect": false }
       ]
     },
     {
       "questionNumber": 25,
-      "question": "El congreso de los diputados y el senado constituyen el poder:",
+      "question": "El mandato de los diputados en el Congreso es de:",
       "answerOptions": [
-        {
-          "text": "a. ejecutivo",
-          "isCorrect": false,
-          "rationale": "El poder ejecutivo lo ostenta el Gobierno."
-        },
-        {
-          "text": "b. legislativo",
-          "isCorrect": true,
-          "rationale": "Las Cortes Generales, compuestas por el Congreso de los Diputados y el Senado, ejercen el poder legislativo del Estado."
-        },
-        {
-          "text": "c. judicial",
-          "isCorrect": false,
-          "rationale": "El poder judicial está en manos de jueces y magistrados."
-        }
+        { "text": "a) 4 años", "isCorrect": true, "rationale": "Las elecciones generales se celebran cada cuatro años, salvo disolución anticipada de las Cámaras." },
+        { "text": "b) 5 años", "isCorrect": false },
+        { "text": "c) Indefinido", "isCorrect": false }
       ]
     }
   ]
