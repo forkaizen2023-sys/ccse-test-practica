@@ -1,0 +1,88 @@
+{
+  "questions": [
+    {
+      "questionNumber": 1,
+      "question": "España es:",
+      "answerOptions": [
+        {
+          "text": "a. una monarquía parlamentaria",
+          "isCorrect": true,
+          "rationale": "La Constitución española de 1978 establece que la forma política del Estado español es la monarquía parlamentaria."
+        },
+        {
+          "text": "b. una República Federal",
+          "isCorrect": false,
+          "rationale": "España no es una República Federal. La jefatura del Estado recae en el Rey, y la soberanía en el pueblo español."
+        },
+        {
+          "text": "c. una monarquía Federal",
+          "isCorrect": false,
+          "rationale": "Aunque se organiza en comunidades autónomas, España no es una monarquía federal, sino parlamentaria."
+        }
+      ]
+    },
+    {
+      "questionNumber": 2,
+      "question": "La ley fundamental de España se llama:",
+      "answerOptions": [
+        {
+          "text": "a. Constitución",
+          "isCorrect": true,
+          "rationale": "La Constitución es la norma jurídica suprema de España, a la que están sujetas todas las leyes y normas."
+        },
+        {
+          "text": "b. ley del Estado",
+          "isCorrect": false,
+          "rationale": "No existe una 'ley del Estado' como tal; la norma suprema es la Constitución."
+        },
+        {
+          "text": "c. código civil",
+          "isCorrect": false,
+          "rationale": "El Código Civil es una ley muy importante, pero está subordinada a la Constitución."
+        }
+      ]
+    },
+    {
+      "questionNumber": 24,
+      "question": "Las Cortes Generales representan al:",
+      "answerOptions": [
+        {
+          "text": "a. pueblo español",
+          "isCorrect": true,
+          "rationale": "La Constitución establece que las Cortes Generales representan al pueblo español y están formadas por el Congreso de los Diputados y el Senado."
+        },
+        {
+          "text": "b. a los partidos políticos",
+          "isCorrect": false,
+          "rationale": "Las Cortes Generales están formadas por miembros de partidos políticos, pero su función es representar a toda la ciudadanía."
+        },
+        {
+          "text": "c. a los ministros",
+          "isCorrect": false,
+          "rationale": "Los ministros forman parte del Gobierno, que es un poder distinto al legislativo."
+        }
+      ]
+    },
+    {
+      "questionNumber": 25,
+      "question": "El congreso de los diputados y el senado constituyen el poder:",
+      "answerOptions": [
+        {
+          "text": "a. ejecutivo",
+          "isCorrect": false,
+          "rationale": "El poder ejecutivo lo ostenta el Gobierno."
+        },
+        {
+          "text": "b. legislativo",
+          "isCorrect": true,
+          "rationale": "Las Cortes Generales, compuestas por el Congreso de los Diputados y el Senado, ejercen el poder legislativo del Estado."
+        },
+        {
+          "text": "c. judicial",
+          "isCorrect": false,
+          "rationale": "El poder judicial está en manos de jueces y magistrados."
+        }
+      ]
+    }
+  ]
+}
