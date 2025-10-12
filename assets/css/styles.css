@@ -1,11 +1,9 @@
 /* =======================================================
    CONFIGURACIÓN GLOBAL Y VARIABLES
    ======================================================= */
-/* Importamos una fuente de Google Fonts para un diseño más profesional */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 :root {
-    /* Paleta de colores profesional y centralizada */
     --color-background: #f4f7f9;
     --color-container: #ffffff;
     --color-text-primary: #2c3e50;
@@ -28,7 +26,7 @@ body {
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
-    line-height: 1.6; /* Aumentado ligeramente para mejor legibilidad */
+    line-height: 1.6;
 }
 
 h1, h2 {
@@ -39,7 +37,6 @@ h1, h2 {
 /* =======================================================
    ESTRUCTURA Y CONTENEDORES PRINCIPALES
    ======================================================= */
-
 .header {
     width: 100%;
     max-width: var(--max-content-width);
@@ -52,7 +49,6 @@ h1, h2 {
     box-sizing: border-box;
 }
 
-/* 💡 OPTIMIZACIÓN: Creamos una clase base para todos los contenedores principales */
 .main-container {
     width: 100%;
     max-width: var(--max-content-width);
@@ -73,7 +69,7 @@ h1, h2 {
     max-width: var(--max-content-width);
     text-align: center;
     padding: 15px 0;
-    margin-top: auto; /* Empuja el footer hacia abajo */
+    margin-top: auto;
     font-size: 0.9em;
     color: #777;
     border-top: 1px solid #e0e0e0;
@@ -82,11 +78,10 @@ h1, h2 {
 /* =======================================================
    BOTONES Y ELEMENTOS INTERACTIVOS
    ======================================================= */
-
 .button-link {
     display: block;
     width: 100%;
-    max-width: 400px; /* Evita que los botones sean demasiado anchos en el menú */
+    max-width: 400px;
     padding: 16px;
     margin-top: 15px;
     border: none;
@@ -101,21 +96,25 @@ h1, h2 {
 
 .button-link:hover {
     background-color: var(--color-button-hover);
-    transform: translateY(-2px); /* Efecto sutil de elevación */
+    transform: translateY(-2px);
 }
 
-/* --- Estilos específicos del Quiz --- */
+/* =======================================================
+   ESTILOS ESPECÍFICOS DEL QUIZ
+   ======================================================= */
+.quiz-container {
+    align-items: flex-start;
+    text-align: left;
+}
 
 .question-text {
     font-size: 1.3em;
     font-weight: 400;
     margin-bottom: 30px;
-    text-align: left;
 }
 
 .answer-options {
     width: 100%;
-    text-align: left;
 }
 
 .answer-options button {
@@ -170,8 +169,6 @@ h1, h2 {
 /* =======================================================
    ESTILOS PROFESIONALES PARA LA GUÍA DE ESTUDIO
    ======================================================= */
-
-/* 💡 MEJORA: Hacemos que el contenedor de la guía se alinee a la izquierda */
 .guide-container {
     align-items: flex-start;
 }
@@ -201,7 +198,6 @@ h1, h2 {
 }
 
 .guide-card h2 {
-    margin-top: 0;
     color: var(--color-button-main);
     font-size: 1.4em;
     border-bottom: 2px solid #f0f0f0;
@@ -224,8 +220,76 @@ h1, h2 {
 }
 
 .guide-card strong {
-    color: var(--color-text-primary);
     font-weight: 600;
+}
+
+/* =======================================================
+   ESTILOS MEJORADOS PARA LA PÁGINA DE DONACIONES
+   ======================================================= */
+.donation-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.donation-icon {
+    font-size: 4em;
+    display: block;
+    margin-bottom: 15px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-15px);}
+    60% {transform: translateY(-8px);}
+}
+
+.donation-intro h2 {
+    font-size: 1.6em;
+}
+
+.donation-options, .alternative-donations {
+    width: 100%;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+.donation-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.donation-tier {
+    background-color: white;
+    color: var(--color-button-main);
+    border: 2px solid var(--color-button-main);
+}
+
+.donation-tier:hover {
+    background-color: var(--color-button-main);
+    color: white;
+}
+
+.donation-tier .price {
+    display: block;
+    font-size: 0.8em;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.alternative-button {
+    background-color: #ffdd00;
+    border-color: #ffdd00;
+    color: #000000;
+}
+
+.alternative-button:hover {
+    background-color: #ffc800;
+    border-color: #ffc800;
 }
 
 /* =======================================================
