@@ -248,7 +248,7 @@ h1, h2 {
     font-size: 1.6em;
 }
 
-.donation-options, .alternative-donations {
+.donation-options {
     width: 100%;
     border-top: 1px solid #e0e0e0;
     padding-top: 30px;
@@ -279,17 +279,6 @@ h1, h2 {
     font-size: 0.8em;
     font-weight: 400;
     opacity: 0.8;
-}
-
-.alternative-button {
-    background-color: #ffdd00;
-    border-color: #ffdd00;
-    color: #000000;
-}
-
-.alternative-button:hover {
-    background-color: #ffc800;
-    border-color: #ffc800;
 }
 
 /* =======================================================
