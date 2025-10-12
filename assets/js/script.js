@@ -1,67 +1,70 @@
+// =======================================================
+// SCRIPT PRINCIPAL DEL CUESTIONARIO CCSE
+// =======================================================
+
 // --- VARIABLES GLOBALES ---
 let currentQuestionIndex = 0;
 let correctAnswers = 0;
 let incorrectAnswers = 0;
-let quizData = []; // Guardará las preguntas cargadas desde el JSON
+let quizData = [];
 
-// --- ELEMENTOS DEL DOM ---
+// --- ELEMENTOS DEL DOM (CACHEADOS PARA EFICIENCIA) ---
 const nextButton = document.getElementById('next-button');
 const questionArea = document.getElementById('question-area');
 const resultMessage = document.getElementById('result-message');
 
 /**
- * 💡 FUNCIÓN PRINCIPAL DE INICIO
- * Se ejecuta tan pronto como la página ha cargado.
- * Determina qué cuestionario cargar a partir de la URL.
+ * 💡 FUNCIÓN DE INICIO
+ * Se ejecuta cuando la página está lista para determinar qué test cargar.
  */
 window.onload = function() {
     const params = new URLSearchParams(window.location.search);
-    const quizType = params.get('quiz'); // Obtiene 'es', 'uk', o 'additional'
+    const quizType = params.get('quiz');
 
     if (!quizType) {
         displayError("Error: No se ha seleccionado ningún test. Vuelve al menú principal.");
         return;
     }
 
+    // Construye la ruta al archivo de datos JSON
     const dataFile = `data/${quizType}.json`;
     loadQuizData(dataFile);
 };
 
 /**
  * Carga las preguntas de forma asíncrona desde un archivo JSON.
- * @param {string} fileName - La ruta al archivo JSON (ej: 'data/es.json').
+ * @param {string} fileName - La ruta al archivo JSON.
  */
 async function loadQuizData(fileName) {
     try {
         const response = await fetch(fileName);
         if (!response.ok) {
-            // Error oculto común: No manejar un 404 si el archivo no existe.
-            throw new Error(`No se pudo encontrar el archivo: ${fileName}`);
+            throw new Error(`Error HTTP ${response.status}: No se pudo encontrar el archivo ${fileName}`);
         }
         const data = await response.json();
         quizData = data.questions;
 
-        // ¡Mejora! Mezclamos las preguntas para que cada test sea diferente.
-        shuffleArray(quizData);
+        if (!quizData || quizData.length === 0) {
+            throw new Error("El archivo de preguntas está vacío o tiene un formato incorrecto.");
+        }
 
-        // Iniciamos el cuestionario solo después de que los datos se hayan cargado.
+        shuffleArray(quizData);
         startQuiz();
     } catch (error) {
         console.error("Error CRÍTICO al cargar las preguntas:", error);
-        displayError("Error: No se pudieron cargar las preguntas. Inténtalo más tarde.");
+        displayError("No se pudieron cargar las preguntas. Revisa la consola para más detalles.");
     }
 }
 
 /**
- * Muestra un mensaje de error en la interfaz de usuario.
+ * Muestra un mensaje de error claro en la interfaz.
  */
 function displayError(message) {
-    questionArea.innerHTML = `<h2>${message}</h2>`;
+    questionArea.innerHTML = `<h2 style="color: var(--color-incorrect);">${message}</h2>`;
 }
 
 /**
- * Mezcla los elementos de un array usando el algoritmo Fisher-Yates.
- * @param {Array} array - El array a mezclar.
+ * Mezcla un array usando el algoritmo Fisher-Yates.
  */
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -71,7 +74,7 @@ function shuffleArray(array) {
 }
 
 /**
- * Inicia el cuestionario mostrando la primera pregunta.
+ * Inicializa y muestra la primera pregunta del test.
  */
 function startQuiz() {
     currentQuestionIndex = 0;
@@ -83,13 +86,13 @@ function startQuiz() {
 }
 
 /**
- * Muestra la pregunta actual y sus opciones de respuesta.
+ * Renderiza la pregunta actual y sus opciones.
  */
 function displayCurrentQuestion() {
     if (currentQuestionIndex < quizData.length) {
         const question = quizData[currentQuestionIndex];
         questionArea.innerHTML = `
-            <div class="question-text">${question.questionNumber}. ${question.question}</div>
+            <div class="question-text">${currentQuestionIndex + 1}. ${question.question}</div>
             <div class="answer-options">
                 ${question.answerOptions.map(option =>
                     `<button>${option.text}</button>`
@@ -97,12 +100,11 @@ function displayCurrentQuestion() {
             </div>
         `;
 
-        // Añadimos los event listeners a los nuevos botones.
         document.querySelectorAll('.answer-options button').forEach(button => {
             button.addEventListener('click', () => checkAnswer(button, question));
         });
         
-        resultMessage.textContent = '';
+        resultMessage.innerHTML = '';
         nextButton.style.display = 'none';
 
     } else {
@@ -111,12 +113,11 @@ function displayCurrentQuestion() {
 }
 
 /**
- * Comprueba la respuesta seleccionada, actualiza el estado y la UI.
+ * Comprueba la respuesta, actualiza contadores y la UI.
  */
 function checkAnswer(selectedButton, question) {
     const correctOption = question.answerOptions.find(option => option.isCorrect);
 
-    // Deshabilitar todos los botones y mostrar colores de acierto/error
     document.querySelectorAll('.answer-options button').forEach(button => {
         button.disabled = true;
         if (button.textContent === correctOption.text) {
@@ -127,12 +128,14 @@ function checkAnswer(selectedButton, question) {
     });
 
     if (selectedButton.textContent === correctOption.text) {
-        resultMessage.innerHTML = '✅ ¡Respuesta correcta!';
-        resultMessage.style.color = 'var(--color-correct)';
+        resultMessage.innerHTML = '<p style="color: var(--color-correct); font-weight: 600;">¡Respuesta correcta!</p>';
         correctAnswers++;
     } else {
-        resultMessage.innerHTML = `❌ Incorrecto. La respuesta correcta es: <strong>${correctOption.text}</strong><br><small>${correctOption.rationale || ''}</small>`;
-        resultMessage.style.color = 'var(--color-incorrect)';
+        resultMessage.innerHTML = `
+            <p style="color: var(--color-incorrect); font-weight: 600;">Incorrecto.</p>
+            <p><strong>La respuesta correcta es:</strong> ${correctOption.text}</p>
+            <p><small>${correctOption.rationale || ''}</small></p>
+        `;
         incorrectAnswers++;
     }
 
@@ -145,7 +148,7 @@ function checkAnswer(selectedButton, question) {
 function showFinalResults() {
     const totalQuestions = quizData.length;
     const percentage = (correctAnswers / totalQuestions) * 100;
-    const isPassed = correctAnswers >= 15; // Asumiendo que 15 es el mínimo para aprobar
+    const isPassed = correctAnswers >= 15;
 
     questionArea.innerHTML = `
         <h2>Resultados Finales</h2>
@@ -154,10 +157,10 @@ function showFinalResults() {
         <h3 style="color: ${isPassed ? 'var(--color-correct)' : 'var(--color-incorrect)'};">
             ${isPassed ? '¡ENHORABUENA, HAS APROBADO!' : 'Necesitas seguir practicando.'}
         </h3>
-        <button onclick="startQuiz()">Repetir Test</button>
+        <button class="button-link" onclick="startQuiz()">Repetir Test</button>
     `;
     nextButton.style.display = 'none';
-    resultMessage.textContent = '';
+    resultMessage.innerHTML = '';
 }
 
 // --- EVENT LISTENERS ---
