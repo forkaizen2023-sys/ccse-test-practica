@@ -18,6 +18,11 @@ const resultMessage = document.getElementById('result-message');
  * Se ejecuta cuando la página está lista para determinar qué test cargar.
  */
 window.onload = function() {
+    // Si no estamos en la página del quiz, no hacemos nada.
+    if (!document.getElementById('quiz-content')) {
+        return;
+    }
+
     const params = new URLSearchParams(window.location.search);
     const quizType = params.get('quiz');
 
@@ -52,7 +57,7 @@ async function loadQuizData(fileName) {
         startQuiz();
     } catch (error) {
         console.error("Error CRÍTICO al cargar las preguntas:", error);
-        displayError("No se pudieron cargar las preguntas. Revisa la consola para más detalles.");
+        displayError("No se pudieron cargar las preguntas. Revisa la consola (F12) para más detalles.");
     }
 }
 
@@ -164,7 +169,9 @@ function showFinalResults() {
 }
 
 // --- EVENT LISTENERS ---
-nextButton.addEventListener('click', () => {
-    currentQuestionIndex++;
-    displayCurrentQuestion();
-});
+if (nextButton) {
+    nextButton.addEventListener('click', () => {
+        currentQuestionIndex++;
+        displayCurrentQuestion();
+    });
+}
