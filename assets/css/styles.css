@@ -1,17 +1,20 @@
+/* =======================================================
+   CONFIGURACIÓN GLOBAL Y VARIABLES
+   ======================================================= */
 /* Importamos una fuente de Google Fonts para un diseño más profesional */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 :root {
-    /* Definimos una paleta de colores profesional */
+    /* Paleta de colores profesional y centralizada */
     --color-background: #f4f7f9;
     --color-container: #ffffff;
-    --color-text-primary: #2c3e50; /* Azul oscuro elegante */
-    --color-button-main: #0077b6; /* Azul primario */
-    --color-button-hover: #005f93; /* Azul oscuro para hover */
-    --color-correct: #27ae60; /* Verde para acierto */
-    --color-incorrect: #c0392b; /* Rojo para error */
+    --color-text-primary: #2c3e50;
+    --color-button-main: #0077b6;
+    --color-button-hover: #005f93;
+    --color-correct: #27ae60;
+    --color-incorrect: #c0392b;
     --color-shadow: rgba(0, 0, 0, 0.08);
-    --max-content-width: 700px; /* Definición de ancho máximo */
+    --max-content-width: 700px;
 }
 
 body {
@@ -20,94 +23,98 @@ body {
     color: var(--color-text-primary);
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     min-height: 100vh;
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
-    line-height: 1.5; /* Mejora la lectura */
+    line-height: 1.6; /* Aumentado ligeramente para mejor legibilidad */
 }
 
-/* --- Contenedores principales (Header, Footer, Quiz) --- */
-.header, .footer, .quiz-container, .guide-container, .donations-container {
-    width: 100%;
-    max-width: var(--max-content-width);
-    box-sizing: border-box;
+h1, h2 {
+    font-weight: 600;
+    margin-top: 0;
 }
+
+/* =======================================================
+   ESTRUCTURA Y CONTENEDORES PRINCIPALES
+   ======================================================= */
 
 .header {
+    width: 100%;
+    max-width: var(--max-content-width);
     text-align: center;
     padding: 20px;
     margin-bottom: 20px;
     background-color: var(--color-container);
-    box-shadow: 0 4px 8px var(--color-shadow);
+    box-shadow: 0 4px 12px var(--color-shadow);
     border-radius: 12px;
+    box-sizing: border-box;
 }
 
-/* 🔑 CLAVE PARA CENTRAR EN EL MENÚ PRINCIPAL Y DARLE ESTILO */
-.quiz-container, .guide-container, .donations-container {
+/* 💡 OPTIMIZACIÓN: Creamos una clase base para todos los contenedores principales */
+.main-container {
+    width: 100%;
+    max-width: var(--max-content-width);
     background-color: var(--color-container);
     padding: 40px; 
     border-radius: 12px;
-    box-shadow: 0 4px 8px var(--color-shadow);
+    box-shadow: 0 4px 12px var(--color-shadow);
     margin-bottom: 25px;
-    
-    /* Centra los botones del menú y el texto del contenedor */
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center; 
     text-align: center;
 }
 
-
 .footer {
+    width: 100%;
+    max-width: var(--max-content-width);
     text-align: center;
     padding: 15px 0;
-    margin-top: 20px;
-    font-size: 0.85em;
-    color: #666;
-    border-top: 1px solid #ddd;
+    margin-top: auto; /* Empuja el footer hacia abajo */
+    font-size: 0.9em;
+    color: #777;
+    border-top: 1px solid #e0e0e0;
 }
 
-h1, h2 {
-    font-weight: 600;
-    margin-top: 0;
-    color: var(--color-text-primary);
-}
+/* =======================================================
+   BOTONES Y ELEMENTOS INTERACTIVOS
+   ======================================================= */
 
-/* --- Estilo para los enlaces de los botones del menú principal --- */
 .button-link {
     display: block;
     width: 100%;
+    max-width: 400px; /* Evita que los botones sean demasiado anchos en el menú */
     padding: 16px;
     margin-top: 15px;
-    margin-bottom: 12px;
-    border: 2px solid var(--color-button-main);
+    border: none;
     border-radius: 8px;
     background-color: var(--color-button-main);
     color: white;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 600;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .button-link:hover {
     background-color: var(--color-button-hover);
-    border-color: var(--color-button-hover);
+    transform: translateY(-2px); /* Efecto sutil de elevación */
 }
 
-/* Estilos específicos para el quiz (preguntas y botones de respuesta) */
+/* --- Estilos específicos del Quiz --- */
+
 .question-text {
     font-size: 1.3em;
     font-weight: 400;
     margin-bottom: 30px;
-    line-height: 1.5;
     text-align: left;
 }
 
 .answer-options {
+    width: 100%;
     text-align: left;
 }
 
@@ -118,31 +125,29 @@ h1, h2 {
     margin-bottom: 12px;
     border: 2px solid #e0e0e0;
     border-radius: 8px;
-    background-color: transparent;
+    background-color: white;
     cursor: pointer;
     font-size: 1em;
-    font-weight: 500;
+    text-align: left;
     color: var(--color-text-primary);
     transition: all 0.2s ease;
 }
 
-.answer-options button:hover {
-    background-color: #f5f5f5;
-    border-color: #c0c0c0;
+.answer-options button:hover:not(:disabled) {
+    background-color: #f7f7f7;
+    border-color: var(--color-button-main);
 }
 
 .answer-options button.correct {
     background-color: var(--color-correct);
     color: white;
     border-color: var(--color-correct);
-    box-shadow: 0 0 10px rgba(39, 174, 96, 0.5);
 }
 
 .answer-options button.incorrect {
     background-color: var(--color-incorrect);
     color: white;
     border-color: var(--color-incorrect);
-    box-shadow: 0 0 10px rgba(192, 57, 43, 0.5);
 }
 
 #next-button {
@@ -155,85 +160,91 @@ h1, h2 {
     font-size: 1.1em;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s ease;
 }
 
-/* --- Estilos para la guía de estudio (Guide) --- */
-.guide-content {
-    text-align: left;
-    line-height: 1.7; 
-    font-size: 0.95em;
+#next-button:hover {
+    background-color: var(--color-button-hover);
 }
-
-.guide-content h2, .guide-content h3 {
-    margin-top: 30px;
-    border-bottom: 2px solid var(--color-button-main);
-    padding-bottom: 5px;
-}
-
-.guide-content ul {
-    padding-left: 20px;
-}
-
-/* --- Estilos del Banner de Publicidad --- */
-.ad-banner {
-    width: 100%;
-    max-width: var(--max-content-width); 
-    text-align: center;
-    margin: 15px auto; 
-    padding: 10px;
-    background-color: var(--color-container); 
-    border-radius: 8px;
-    box-shadow: 0 2px 4px var(--color-shadow);
-    box-sizing: border-box;
-    font-size: 0.8em; 
-    color: #999;
-}
-
-/* --- Estilos de la donación --- */
-.stripe-button-wrapper {
-    max-width: 250px;
-    margin: 20px auto 0;
-    display: flex;
-    justify-content: center;
-}
-
-.footer {
-    padding: 10px 0;
-    font-size: 0.9em;
-}
-
 
 /* =======================================================
-   RESPONSIVIDAD (Media Query para Pantallas Pequeñas/Móviles)
+   ESTILOS PROFESIONALES PARA LA GUÍA DE ESTUDIO
+   ======================================================= */
+
+/* 💡 MEJORA: Hacemos que el contenedor de la guía se alinee a la izquierda */
+.guide-container {
+    align-items: flex-start;
+}
+
+.guide-intro {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.guide-card {
+    width: 100%;
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px var(--color-shadow);
+    border-left: 5px solid var(--color-button-main);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.guide-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.guide-card h2 {
+    margin-top: 0;
+    color: var(--color-button-main);
+    font-size: 1.4em;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.guide-card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.guide-card li {
+    padding: 10px 5px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.guide-card li:last-child {
+    border-bottom: none;
+}
+
+.guide-card strong {
+    color: var(--color-text-primary);
+    font-weight: 600;
+}
+
+/* =======================================================
+   RESPONSIVIDAD (Media Query para Móviles)
    ======================================================= */
 @media (max-width: 768px) {
     body {
         padding: 10px;
     }
 
-    .quiz-container, .guide-container, .donations-container {
+    .main-container {
         padding: 20px;
-        border-radius: 8px;
-        margin-bottom: 15px;
     }
 
     h1 {
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
 
     .question-text {
-        font-size: 1.1em;
-        margin-bottom: 20px;
-    }
-
-    .answer-options button {
-        padding: 12px;
-        font-size: 0.95em;
-    }
-
-    .button-link {
-        padding: 14px;
-        font-size: 1em;
+        font-size: 1.15em;
     }
 }
