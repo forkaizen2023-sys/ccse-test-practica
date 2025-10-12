@@ -4,75 +4,1369 @@
       "questionNumber": 1,
       "question": "Іспанія це:",
       "answerOptions": [
-        {
-          "text": "a. парламентська монархія",
-          "isCorrect": true,
-          "rationale": "Конституція Іспанії 1978 року встановлює, що політичною формою іспанської держави є парламентська монархія."
-        },
-        {
-          "text": "b. федеративна республіка",
-          "isCorrect": false,
-          "rationale": "Іспанія не є федеративною республікою. Главою держави є король, а суверенітет належить іспанському народу."
-        },
-        {
-          "text": "c. федеративна монархія",
-          "isCorrect": false,
-          "rationale": "Хоча Іспанія організована в автономні спільноти, вона не є федеративною монархією, а парламентською."
-        }
+        { "text": "a. парламентська монархія", "isCorrect": true },
+        { "text": "b. федеративна республіка", "isCorrect": false },
+        { "text": "c. федеративна монархія", "isCorrect": false }
       ]
     },
     {
       "questionNumber": 2,
       "question": "Основний закон Іспанії називається:",
       "answerOptions": [
-        {
-          "text": "a. Конституція",
-          "isCorrect": true,
-          "rationale": "Конституція є найвищим правовим актом Іспанії, якому підпорядковуються всі закони та норми."
-        },
-        {
-          "text": "b. Закон держави",
-          "isCorrect": false,
-          "rationale": "Такого поняття, як 'Закон держави', не існує; найвищим нормативним актом є Конституція."
-        },
-        {
-          "text": "c. Цивільний кодекс",
-          "isCorrect": false,
-          "rationale": "Цивільний кодекс є дуже важливим законом, але він підпорядковується Конституції."
-        }
+        { "text": "a. Конституція", "isCorrect": true },
+        { "text": "b. основний закон", "isCorrect": false },
+        { "text": "c. суттєве положення", "isCorrect": false }
       ]
     },
     {
-      "questionNumber": 155,
-      "question": "Іспанці повинні допомагати у випадках катастроф або громадських лих.",
+      "questionNumber": 3,
+      "question": "Згідно з іспанською Конституцією, національний суверенітет належить:",
       "answerOptions": [
-        {
-          "text": "Правда",
-          "isCorrect": true,
-          "rationale": "Конституція встановлює, що всі громадяни зобов'язані співпрацювати у випадках надзвичайних ситуацій, катастроф або громадських лих."
-        },
-        {
-          "text": "Неправда",
-          "isCorrect": false,
-          "rationale": "Допомога у випадках катастроф є громадянським обов'язком."
-        }
+        { "text": "a. іспанському народові", "isCorrect": true },
+        { "text": "b. уряду держави", "isCorrect": false },
+        { "text": "c. конгресу депутатів", "isCorrect": false }
       ]
     },
     {
-      "questionNumber": 156,
-      "question": "В Іспанії громадяни можуть обирати, в якому місті вони хочуть жити.",
+      "questionNumber": 4,
+      "question": "Інститут жінок це:",
       "answerOptions": [
-        {
-          "text": "Правда",
-          "isCorrect": true,
-          "rationale": "Право на вільне пересування та проживання на території Іспанії гарантується Конституцією."
-        },
-        {
-          "text": "Неправда",
-          "isCorrect": false,
-          "rationale": "Це є основним правом усіх іспанських громадян та легальних резидентів."
-        }
+        { "text": "a. європейська установа", "isCorrect": false },
+        { "text": "b. іспанський орган", "isCorrect": true },
+        { "text": "c. неурядова організація (НУО)", "isCorrect": false }
       ]
+    },
+    {
+      "questionNumber": 5,
+      "question": "Скільки офіційних релігій в Іспанії?",
+      "answerOptions": [
+        { "text": "a. жодної", "isCorrect": true },
+        { "text": "b. одна", "isCorrect": false },
+        { "text": "c. дві", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 6,
+      "question": "Кастильська або іспанська мова є офіційною:",
+      "answerOptions": [
+        { "text": "a. на всій території Іспанії", "isCorrect": true },
+        { "text": "b. лише там, де немає інших мов", "isCorrect": false },
+        { "text": "c. на всьому Іберійському півострові", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 7,
+      "question": "Яка з цих сил безпеки є регіональною?",
+      "answerOptions": [
+        { "text": "a. місцева поліція", "isCorrect": false },
+        { "text": "b. Цивільна гвардія", "isCorrect": false },
+        { "text": "c. форальна поліція Наварри", "isCorrect": true }
+      ]
+    },
+    {
+      "questionNumber": 8,
+      "question": "Яка сила безпеки діє на всій території Іспанії?",
+      "answerOptions": [
+        { "text": "a. форальна поліція Наварри", "isCorrect": false },
+        { "text": "b. Національний поліцейський корпус", "isCorrect": true },
+        { "text": "c. Моссос д'Есквадра", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 9,
+      "question": "Конституція встановлює поділ влади на: виконавчу, законодавчу та:",
+      "answerOptions": [
+        { "text": "a. судову", "isCorrect": true },
+        { "text": "b. інформаційну", "isCorrect": false },
+        { "text": "c. політичну", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 10,
+      "question": "Прапор Іспанії повинен використовуватися:",
+      "answerOptions": [
+        { "text": "a. лише в офіційні святкові дні", "isCorrect": false },
+        { "text": "b. на всіх громадських будівлях", "isCorrect": true },
+        { "text": "c. лише під час заходів уряду Іспанії", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 11,
+      "question": "Хто був першим королем Іспанії?",
+      "answerOptions": [
+        { "text": "a. Фердинанд VII", "isCorrect": false },
+        { "text": "b. Карл I", "isCorrect": true },
+        { "text": "c. Хуан Карлос I", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 12,
+      "question": "Управління охороною здоров'я є компетенцією:",
+      "answerOptions": [
+        { "text": "a. держави", "isCorrect": false },
+        { "text": "b. автономних спільнот", "isCorrect": true },
+        { "text": "c. мерій", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 13,
+      "question": "Хто був першим головою уряду Іспанії в демократичний період?",
+      "answerOptions": [
+        { "text": "a. Маріано Рахой", "isCorrect": false },
+        { "text": "b. Адольфо Суарес", "isCorrect": true },
+        { "text": "c. Хосе Луїс Родрігес Сапатеро", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 14,
+      "question": "Який з цих органів відповідає за тлумачення Конституції?",
+      "answerOptions": [
+        { "text": "a. конституційна влада", "isCorrect": false },
+        { "text": "b. конституційний суд", "isCorrect": true },
+        { "text": "c. генеральна рада судової влади", "isCorrect": false }
+      ]
+    },
+    {
+      "questionNumber": 15,
+      "question": "Хто модерує функціонування іспанських установ?",
+      "answerOptions": [
+        { "text": "a. голова уряду", "isCorrect": false },
+        { "text": "b. Король", "isCorrect": true },
+        { "text": "c. директор Королівської іспанської академії", "isCorrect": false }
+      ]
+    },
+    {
+        "questionNumber": 16,
+        "question": "Як називається палата територіального представництва в Іспанії?",
+        "answerOptions": [
+            { "text": "a. сенат", "isCorrect": true },
+            { "text": "b. постійна депутація", "isCorrect": false },
+            { "text": "c. конгрес депутатів", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 17,
+        "question": "Скільки автономних міст в Іспанії?",
+        "answerOptions": [
+            { "text": "a. 17", "isCorrect": false },
+            { "text": "b. 2", "isCorrect": true },
+            { "text": "c. 50", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 18,
+        "question": "Як була ухвалена Конституція?",
+        "answerOptions": [
+            { "text": "a. законом", "isCorrect": false },
+            { "text": "b. на референдумі", "isCorrect": true },
+            { "text": "c. за наказом короля", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 19,
+        "question": "Як називається найважливіший закон кожної автономної спільноти?",
+        "answerOptions": [
+            { "text": "a. статут автономії", "isCorrect": true },
+            { "text": "b. автономне законодавство", "isCorrect": false },
+            { "text": "c. закон спільноти", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 20,
+        "question": "Громадські культурні та спортивні споруди є компетенцією:",
+        "answerOptions": [
+            { "text": "a. мерії", "isCorrect": true },
+            { "text": "b. Міністерства освіти, професійної підготовки та спорту", "isCorrect": false },
+            { "text": "c. Міністерства рівності", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 21,
+        "question": "Хто керує військовою адміністрацією Іспанії?",
+        "answerOptions": [
+            { "text": "a. мерії", "isCorrect": false },
+            { "text": "b. уряд", "isCorrect": true },
+            { "text": "c. Генеральні кортеси", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 22,
+        "question": "Що існує на Балеарських островах замість провінційних рад?",
+        "answerOptions": [
+            { "text": "a. кабільдос", "isCorrect": false },
+            { "text": "b. острівні ради", "isCorrect": true },
+            { "text": "c. конгреси", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 23,
+        "question": "В якому місті найбільше мешканців?",
+        "answerOptions": [
+            { "text": "a. Севілья", "isCorrect": false },
+            { "text": "b. Барселона", "isCorrect": true },
+            { "text": "c. Сарагоса", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 24,
+        "question": "Генеральні кортеси представляють:",
+        "answerOptions": [
+            { "text": "a. іспанський народ", "isCorrect": true },
+            { "text": "b. політичні партії", "isCorrect": false },
+            { "text": "c. міністрів", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 25,
+        "question": "Конгрес депутатів і сенат становлять владу:",
+        "answerOptions": [
+            { "text": "a. виконавчу", "isCorrect": false },
+            { "text": "b. законодавчу", "isCorrect": true },
+            { "text": "c. судову", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 26,
+        "question": "Який закон видає уряд у випадках особливої терміновості?",
+        "answerOptions": [
+            { "text": "a. декрет-закон", "isCorrect": true },
+            { "text": "b. звичайний закон", "isCorrect": false },
+            { "text": "c. органічний закон", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 27,
+        "question": "Скільки автономних спільнот в Іспанії?",
+        "answerOptions": [
+            { "text": "a. 8", "isCorrect": false },
+            { "text": "b. 17", "isCorrect": true },
+            { "text": "c. 25", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 28,
+        "question": "Кольори іспанського прапора:",
+        "answerOptions": [
+            { "text": "a. білий і червоний", "isCorrect": false },
+            { "text": "b. червоний і жовтий", "isCorrect": true },
+            { "text": "c. жовтий і білий", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 29,
+        "question": "Де знаходиться резиденція уряду Іспанії?",
+        "answerOptions": [
+            { "text": "a. в Мадриді", "isCorrect": true },
+            { "text": "b. в Барселоні", "isCorrect": false },
+            { "text": "c. в Севільї", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 30,
+        "question": "Синій прапор з дванадцятьма жовтими зірками в колі — це прапор:",
+        "answerOptions": [
+            { "text": "a. Європейського Союзу", "isCorrect": true },
+            { "text": "b. європейського парламенту", "isCorrect": false },
+            { "text": "c. комісії Європи", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 31,
+        "question": "На муніципальних виборах голосують за:",
+        "answerOptions": [
+            { "text": "a. мерів та радників", "isCorrect": true },
+            { "text": "b. міністрів та міністерок", "isCorrect": false },
+            { "text": "c. депутатів та сенаторів", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 32,
+        "question": "Яка мова є офіційною в Країні Басків?",
+        "answerOptions": [
+            { "text": "a. бабле", "isCorrect": false },
+            { "text": "b. арагонська", "isCorrect": false },
+            { "text": "c. еускера", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 33,
+        "question": "Усі іспанці зобов'язані знати мову:",
+        "answerOptions": [
+            { "text": "a. автономну держави", "isCorrect": false },
+            { "text": "b. офіційну держави", "isCorrect": true },
+            { "text": "c. місцеву держави", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 34,
+        "question": "Аранська мова є співофіційною і нею розмовляють на невеликій території:",
+        "answerOptions": [
+            { "text": "a. Каталонії", "isCorrect": true },
+            { "text": "b. Ла-Ріохи", "isCorrect": false },
+            { "text": "c. Арагону", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 35,
+        "question": "Інституціями автономної спільноти є законодавча асамблея, рада уряду та:",
+        "answerOptions": [
+            { "text": "a. провінційна рада", "isCorrect": false },
+            { "text": "b. президент", "isCorrect": true },
+            { "text": "c. делегат уряду", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 36,
+        "question": "Який з цих варіантів є співофіційною мовою в одній з автономних спільнот?",
+        "answerOptions": [
+            { "text": "a. галісійська", "isCorrect": true },
+            { "text": "b. арагонська", "isCorrect": false },
+            { "text": "c. мурсійська", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 37,
+        "question": "Яка установа має на меті сприяння викладанню іспанської мови та поширенню іспаномовної культури?",
+        "answerOptions": [
+            { "text": "a. Національний інститут державного управління", "isCorrect": false },
+            { "text": "b. Національний інститут статистики", "isCorrect": false },
+            { "text": "c. Інститут Сервантеса", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 38,
+        "question": "Який з наступних органів працює над мовною стандартизацією?",
+        "answerOptions": [
+            { "text": "a. Інститут Рамона Льюля", "isCorrect": false },
+            { "text": "b. Інститут Сервантеса", "isCorrect": false },
+            { "text": "c. Королівська іспанська академія", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 39,
+        "question": "Де живе голова уряду?",
+        "answerOptions": [
+            { "text": "a. в Королівському палаці", "isCorrect": false },
+            { "text": "b. в палаці Сарсуела", "isCorrect": false },
+            { "text": "c. в палаці Монклоа", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 40,
+        "question": "Який з наступних органів є частиною збройних сил Іспанії?",
+        "answerOptions": [
+            { "text": "a. форальна поліція", "isCorrect": false },
+            { "text": "b. цивільна гвардія", "isCorrect": false },
+            { "text": "c. повітряні сили", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 41,
+        "question": "Хто входить до складу уряду?",
+        "answerOptions": [
+            { "text": "a. міністри", "isCorrect": true },
+            { "text": "b. радники", "isCorrect": false },
+            { "text": "c. мери", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 42,
+        "question": "Іспанія — це:",
+        "answerOptions": [
+            { "text": "a. соціальна і демократична правова держава", "isCorrect": true },
+            { "text": "b. вільно асоційована держава", "isCorrect": false },
+            { "text": "c. конфедеративна держава", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 43,
+        "question": "Яка з наступних абревіатур відповідає політичній партії?",
+        "answerOptions": [
+            { "text": "a. PP", "isCorrect": true },
+            { "text": "b. ВВП", "isCorrect": false },
+            { "text": "c. ЄС", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 44,
+        "question": "Який титул має майбутня королева, донька короля?",
+        "answerOptions": [
+            { "text": "a. принцеса Астурійська", "isCorrect": true },
+            { "text": "b. принцеса Арагонська", "isCorrect": false },
+            { "text": "c. герцогиня Альба", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 45,
+        "question": "За якого короля відновлюється демократія в Іспанії після режиму Франко?",
+        "answerOptions": [
+            { "text": "a. з Карлом III", "isCorrect": false },
+            { "text": "b. з Альфонсом XIII", "isCorrect": false },
+            { "text": "c. з Хуаном Карлосом I", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 46,
+        "question": "В якому році була ухвалена іспанська Конституція?",
+        "answerOptions": [
+            { "text": "a. в 1957", "isCorrect": false },
+            { "text": "b. в 1978", "isCorrect": true },
+            { "text": "c. в 2001", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 47,
+        "question": "Скільки автономних спільнот мають власний прапор?",
+        "answerOptions": [
+            { "text": "a. жодна", "isCorrect": false },
+            { "text": "b. всі", "isCorrect": true },
+            { "text": "c. ті, що мають співофіційну мову", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 48,
+        "question": "Який офіційний орган розглядає скарги громадян на неналежну роботу адміністрацій?",
+        "answerOptions": [
+            { "text": "a. служба захисту прав споживачів", "isCorrect": false },
+            { "text": "b. Національна поліція", "isCorrect": false },
+            { "text": "c. захисник народу", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 49,
+        "question": "Скільки підписів щонайменше мають зібрати громадяни, щоб подати законопроєкт?",
+        "answerOptions": [
+            { "text": "a. 250 000", "isCorrect": false },
+            { "text": "b. 100 000", "isCorrect": false },
+            { "text": "c. 500 000", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 50,
+        "question": "До якої з цих міжнародних організацій належить Іспанія?",
+        "answerOptions": [
+            { "text": "a. до Спільного ринку Півдня (Меркосур)", "isCorrect": false },
+            { "text": "b. до Організації Об'єднаних Націй (ООН)", "isCorrect": true },
+            { "text": "c. до Євразійського економічного союзу (ЄАЕС)", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 51,
+        "question": "В організації адміністрації розрізняють три рівні: центральний, автономний та:",
+        "answerOptions": [
+            { "text": "a. державний", "isCorrect": false },
+            { "text": "b. регіональний", "isCorrect": false },
+            { "text": "c. місцевий", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 52,
+        "question": "Законодавча влада належить:",
+        "answerOptions": [
+            { "text": "a. президенту та міністрам", "isCorrect": false },
+            { "text": "b. суддям та магістратам", "isCorrect": false },
+            { "text": "c. депутатам та сенаторам", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 53,
+        "question": "Де живе король?",
+        "answerOptions": [
+            { "text": "a. в палаці Ла-Монеда", "isCorrect": false },
+            { "text": "b. в палаці Сарсуела", "isCorrect": true },
+            { "text": "c. в палаці Монклоа", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 54,
+        "question": "Офіційна назва іспанського парламенту:",
+        "answerOptions": [
+            { "text": "a. Генеральні кортеси", "isCorrect": true },
+            { "text": "b. конгрес депутатів", "isCorrect": false },
+            { "text": "c. сенат", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 55,
+        "question": "Уряд складається з президента, одного або кількох віцепрезидентів та:",
+        "answerOptions": [
+            { "text": "a. радників", "isCorrect": false },
+            { "text": "b. міністрів", "isCorrect": true },
+            { "text": "c. губернаторів", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 56,
+        "question": "Хто може правити в Іспанії?",
+        "answerOptions": [
+            { "text": "a. лише чоловіки", "isCorrect": false },
+            { "text": "b. лише жінки", "isCorrect": false },
+            { "text": "c. як чоловіки, так і жінки", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 57,
+        "question": "Рахункова палата залежить від:",
+        "answerOptions": [
+            { "text": "a. Голови уряду", "isCorrect": false },
+            { "text": "b. Генеральних кортесів", "isCorrect": true },
+            { "text": "c. Міністерства фінансів", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 58,
+        "question": "Третя влада в державі після короля та голови уряду:",
+        "answerOptions": [
+            { "text": "a. голова сенату", "isCorrect": false },
+            { "text": "b. міністр економіки", "isCorrect": false },
+            { "text": "c. голова Конгресу депутатів", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 59,
+        "question": "Якою офіційною мовою розмовляють на Балеарських островах?",
+        "answerOptions": [
+            { "text": "a. галісійською", "isCorrect": false },
+            { "text": "b. каталанською", "isCorrect": true },
+            { "text": "c. еускерою", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 60,
+        "question": "Конституція захищає такі цінності, як свобода, рівність, політичний плюралізм та:",
+        "answerOptions": [
+            { "text": "a. справедливість", "isCorrect": true },
+            { "text": "b. солідарність", "isCorrect": false },
+            { "text": "c. братерство", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 61,
+        "question": "Скільки квадратних кілометрів приблизно має Іспанія?",
+        "answerOptions": [
+            { "text": "a. 100 000", "isCorrect": false },
+            { "text": "b. 500 000", "isCorrect": true },
+            { "text": "c. 1 мільйон", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 62,
+        "question": "Скільки мільйонів жителів в Іспанії?",
+        "answerOptions": [
+            { "text": "a. 35 мільйонів", "isCorrect": false },
+            { "text": "b. 48 мільйонів", "isCorrect": true },
+            { "text": "c. 62 мільйони", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 63,
+        "question": "Який з цих органів є дорадчим органом уряду Іспанії?",
+        "answerOptions": [
+            { "text": "a. європейський парламент", "isCorrect": false },
+            { "text": "b. державна рада", "isCorrect": true },
+            { "text": "c. конституційний суд", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 64,
+        "question": "Хто керує внутрішньою та зовнішньою політикою Іспанії?",
+        "answerOptions": [
+            { "text": "a. Король", "isCorrect": false },
+            { "text": "b. уряд", "isCorrect": true },
+            { "text": "c. конгрес депутатів", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 65,
+        "question": "Захисник народу залежить від:",
+        "answerOptions": [
+            { "text": "a. Ради міністрів", "isCorrect": false },
+            { "text": "b. Рахункової палати", "isCorrect": false },
+            { "text": "c. Генеральних кортесів", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 66,
+        "question": "Інститут Ечепаре має на меті поширення:",
+        "answerOptions": [
+            { "text": "a. еускери та баскської культури", "isCorrect": true },
+            { "text": "b. бабле та кантабрійської культури", "isCorrect": false },
+            { "text": "c. галісійської мови та галісійської культури", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 67,
+        "question": "Іберо-американська спільнота націй складається з:",
+        "answerOptions": [
+            { "text": "a. 22 країн Америки та Європи", "isCorrect": true },
+            { "text": "b. Південної Америки та Іспанії", "isCorrect": false },
+            { "text": "c. усіх країн, де розмовляють іспанською", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 68,
+        "question": "Генеральний секретаріат з мовної політики поширює та просуває мову та культуру:",
+        "answerOptions": [
+            { "text": "a. каталонську", "isCorrect": false },
+            { "text": "b. галісійську", "isCorrect": true },
+            { "text": "c. баскську", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 69,
+        "question": "Як звати короля Іспанії?",
+        "answerOptions": [
+            { "text": "a. Хуан Карлос I", "isCorrect": false },
+            { "text": "b. Феліпе VI", "isCorrect": true },
+            { "text": "c. Альфонс XIII", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 70,
+        "question": "Як називається орган управління суддів та магістратів?",
+        "answerOptions": [
+            { "text": "a. верховний суд", "isCorrect": false },
+            { "text": "b. Генеральна рада судової влади", "isCorrect": true },
+            { "text": "c. державна рада", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 71,
+        "question": "Хто затверджує державний бюджет?",
+        "answerOptions": [
+            { "text": "a. Генеральні кортеси", "isCorrect": true },
+            { "text": "b. центральна виборча комісія", "isCorrect": false },
+            { "text": "c. Король", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 72,
+        "question": "Іспанська Конституція є:",
+        "answerOptions": [
+            { "text": "a. основним законом", "isCorrect": true },
+            { "text": "b. частиною іншого закону", "isCorrect": false },
+            { "text": "c. вторинним законом", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 73,
+        "question": "Генеральні кортеси складаються з сенату та:",
+        "answerOptions": [
+            { "text": "a. конгресу депутатів", "isCorrect": true },
+            { "text": "b. верховного суду", "isCorrect": false },
+            { "text": "c. державної ради", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 74,
+        "question": "Хто розробляє закони?",
+        "answerOptions": [
+            { "text": "a. виконавча влада", "isCorrect": false },
+            { "text": "b. законодавча влада", "isCorrect": true },
+            { "text": "c. судова влада", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 75,
+        "question": "Захист територіальної цілісності Іспанії належить:",
+        "answerOptions": [
+            { "text": "a. Національній поліції та Цивільній гвардії", "isCorrect": false },
+            { "text": "b. збройним силам", "isCorrect": true },
+            { "text": "c. Національній поліції та регіональним поліціям", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 76,
+        "question": "Іспанська армія бере участь з 1989 року в миротворчих місіях:",
+        "answerOptions": [
+            { "text": "a. Організації іберо-американських держав (OEI)", "isCorrect": false },
+            { "text": "b. Західноєвропейського союзу (ЗЄС)", "isCorrect": false },
+            { "text": "c. Організації Об'єднаних Націй (ООН)", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 77,
+        "question": "Хто контролює порти та аеропорти, кордони та узбережжя?",
+        "answerOptions": [
+            { "text": "a. Цивільна гвардія", "isCorrect": true },
+            { "text": "b. місцева поліція", "isCorrect": false },
+            { "text": "c. Національна поліція", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 78,
+        "question": "Хто здійснює паспортний контроль на кордонах Іспанії?",
+        "answerOptions": [
+            { "text": "a. Цивільна гвардія", "isCorrect": false },
+            { "text": "b. місцева поліція", "isCorrect": false },
+            { "text": "c. Національна поліція", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 79,
+        "question": "Хто контролює рух автомобілів у містах?",
+        "answerOptions": [
+            { "text": "a. Цивільна гвардія", "isCorrect": false },
+            { "text": "b. місцева поліція", "isCorrect": true },
+            { "text": "c. Національна поліція", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 80,
+        "question": "Як називається регіональна поліція Каталонії?",
+        "answerOptions": [
+            { "text": "a. Цивільна гвардія", "isCorrect": false },
+            { "text": "b. Ерцайнца", "isCorrect": false },
+            { "text": "c. Моссос д'Есквадра", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 81,
+        "question": "Як називається регіональна поліція Країни Басків?",
+        "answerOptions": [
+            { "text": "a. Ерцайнца", "isCorrect": true },
+            { "text": "b. Цивільна гвардія", "isCorrect": false },
+            { "text": "c. Моссос д'Есквадра", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 82,
+        "question": "З якого року править король Феліпе VI?",
+        "answerOptions": [
+            { "text": "a. з 1975", "isCorrect": false },
+            { "text": "b. з 2014", "isCorrect": true },
+            { "text": "c. з 2020", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 83,
+        "question": "Хто регулює дорожній рух у селищах та містах?",
+        "answerOptions": [
+            { "text": "a. Цивільна гвардія", "isCorrect": false },
+            { "text": "b. Цивільний захист", "isCorrect": false },
+            { "text": "c. місцева поліція", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 84,
+        "question": "Хто може подати скаргу до Захисника народу?",
+        "answerOptions": [
+            { "text": "a. лише громадяни, які легально проживають", "isCorrect": false },
+            { "text": "b. лише іспанці старше 18 років", "isCorrect": false },
+            { "text": "c. усі громадяни, іспанці чи іноземці", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 85,
+        "question": "В Іспанії голосування на виборах є:",
+        "answerOptions": [
+            { "text": "a. правом", "isCorrect": true },
+            { "text": "b. обов'язком", "isCorrect": false },
+            { "text": "c. зобов'язанням", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 86,
+        "question": "Хто контролює рух на дорогах?",
+        "answerOptions": [
+            { "text": "a. Цивільна гвардія", "isCorrect": true },
+            { "text": "b. Національна поліція", "isCorrect": false },
+            { "text": "c. сухопутні війська", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 87,
+        "question": "Який орган відповідає за збір податків?",
+        "answerOptions": [
+            { "text": "a. Рахункова палата", "isCorrect": false },
+            { "text": "b. Податкове агентство", "isCorrect": true },
+            { "text": "c. Економічна та соціальна рада", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 88,
+        "question": "Де публікуються національні закони?",
+        "answerOptions": [
+            { "text": "a. в бюлетені Національного інституту статистики (INE)", "isCorrect": false },
+            { "text": "b. на порталі електронного уряду (PAE)", "isCorrect": false },
+            { "text": "c. в Офіційному державному віснику (BOE)", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 89,
+        "question": "Як називаються органи управління, що існують лише на Канарських островах?",
+        "answerOptions": [
+            { "text": "a. кабільдос", "isCorrect": true },
+            { "text": "b. острівні ради", "isCorrect": false },
+            { "text": "c. провінційні ради", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 90,
+        "question": "Де поширюється вся інформація про новини та ініціативи електронного уряду?",
+        "answerOptions": [
+            { "text": "a. в INE (Національний інститут статистики)", "isCorrect": false },
+            { "text": "b. в BOE (Офіційний державний вісник)", "isCorrect": false },
+            { "text": "c. на PAE (Портал електронного уряду)", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 91,
+        "question": "Який номер телефону інформаційної служби загальної державної адміністрації?",
+        "answerOptions": [
+            { "text": "a. 010", "isCorrect": false },
+            { "text": "b. 060", "isCorrect": true },
+            { "text": "c. 091", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 92,
+        "question": "Іспанія організована в:",
+        "answerOptions": [
+            { "text": "a. кантони", "isCorrect": false },
+            { "text": "b. автономні спільноти", "isCorrect": true },
+            { "text": "c. федеральні штати", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 93,
+        "question": "Скільки політичних партій в Іспанії?",
+        "answerOptions": [
+            { "text": "a. жодної", "isCorrect": false },
+            { "text": "b. одна", "isCorrect": false },
+            { "text": "c. багато", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 94,
+        "question": "Де відбувається інавгурація голови уряду?",
+        "answerOptions": [
+            { "text": "a. в палаці Монклоа", "isCorrect": false },
+            { "text": "b. в конгресі депутатів", "isCorrect": true },
+            { "text": "c. в сенаті", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 95,
+        "question": "Хто має верховне командування збройними силами?",
+        "answerOptions": [
+            { "text": "a. Король", "isCorrect": true },
+            { "text": "b. голова уряду", "isCorrect": false },
+            { "text": "c. міністр оборони", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 96,
+        "question": "Хто є представником держави в автономній спільноті?",
+        "answerOptions": [
+            { "text": "a. президент автономної спільноти", "isCorrect": false },
+            { "text": "b. делегат уряду", "isCorrect": true },
+            { "text": "c. президент автономної асамблеї", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 97,
+        "question": "Скільки провінцій в Іспанії?",
+        "answerOptions": [
+            { "text": "a. 45", "isCorrect": false },
+            { "text": "b. 50", "isCorrect": true },
+            { "text": "c. 55", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 98,
+        "question": "Викладання співофіційних мов є компетенцією:",
+        "answerOptions": [
+            { "text": "a. держави", "isCorrect": false },
+            { "text": "b. автономної спільноти", "isCorrect": true },
+            { "text": "c. провінції", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 99,
+        "question": "Виконавча влада належить:",
+        "answerOptions": [
+            { "text": "a. уряду держави", "isCorrect": true },
+            { "text": "b. конгресу та сенату", "isCorrect": false },
+            { "text": "c. суддям та магістратам", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 100,
+        "question": "Скільки палат в іспанському парламенті?",
+        "answerOptions": [
+            { "text": "a. одна", "isCorrect": false },
+            { "text": "b. дві", "isCorrect": true },
+            { "text": "c. три", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 101,
+        "question": "Водопостачання та освітлення міст є компетенцією:",
+        "answerOptions": [
+            { "text": "a. мерії", "isCorrect": true },
+            { "text": "b. автономного уряду", "isCorrect": false },
+            { "text": "c. Міністерства громадських робіт та урбанізму", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 102,
+        "question": "У таких питаннях, як громадянство, імміграція, еміграція чи іноземці, компетенцію має лише:",
+        "answerOptions": [
+            { "text": "a. держава", "isCorrect": true },
+            { "text": "b. автономні спільноти", "isCorrect": false },
+            { "text": "c. мерії", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 103,
+        "question": "Скільки жінок було головами уряду в Іспанії?",
+        "answerOptions": [
+            { "text": "a. жодної", "isCorrect": true },
+            { "text": "b. одна", "isCorrect": false },
+            { "text": "c. дві", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 104,
+        "question": "Міжнародні відносини є компетенцією:",
+        "answerOptions": [
+            { "text": "a. держави", "isCorrect": true },
+            { "text": "b. автономних спільнот", "isCorrect": false },
+            { "text": "c. мерій", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 105,
+        "question": "Мерія складається з мера та:",
+        "answerOptions": [
+            { "text": "a. радників", "isCorrect": true },
+            { "text": "b. депутатів", "isCorrect": false },
+            { "text": "c. сенаторів", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 106,
+        "question": "Хто утворює уряд автономних спільнот?",
+        "answerOptions": [
+            { "text": "a. президент та міністри", "isCorrect": false },
+            { "text": "b. мер та радники", "isCorrect": false },
+            { "text": "c. президент та радники", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 107,
+        "question": "Який орган управління в муніципалітетах?",
+        "answerOptions": [
+            { "text": "a. мерія", "isCorrect": true },
+            { "text": "b. провінційна рада", "isCorrect": false },
+            { "text": "c. Кабільдо", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 108,
+        "question": "Як називаються органи управління іспанських провінцій?",
+        "answerOptions": [
+            { "text": "a. кабільдос", "isCorrect": false },
+            { "text": "b. острівні ради", "isCorrect": false },
+            { "text": "c. провінційні ради", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 109,
+        "question": "Який є вищим органом виконавчої влади?",
+        "answerOptions": [
+            { "text": "a. уряд", "isCorrect": true },
+            { "text": "b. збройні сили", "isCorrect": false },
+            { "text": "c. Генеральні кортеси", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 110,
+        "question": "Іспанська мова також називається:",
+        "answerOptions": [
+            { "text": "a. арагонською", "isCorrect": false },
+            { "text": "b. кастильською", "isCorrect": true },
+            { "text": "c. леонською", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 111,
+        "question": "Кого обирають на виборах до європейського парламенту?",
+        "answerOptions": [
+            { "text": "a. європейських міністрів", "isCorrect": false },
+            { "text": "b. генеральних директорів", "isCorrect": false },
+            { "text": "c. євродепутатів", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 112,
+        "question": "Іспанці можуть голосувати з:",
+        "answerOptions": [
+            { "text": "a. 16 років", "isCorrect": false },
+            { "text": "b. 18 років", "isCorrect": true },
+            { "text": "c. 21 року", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 113,
+        "question": "Деякі іноземні громадяни можуть голосувати на виборах:",
+        "answerOptions": [
+            { "text": "a. муніципальних", "isCorrect": true },
+            { "text": "b. регіональних", "isCorrect": false },
+            { "text": "c. загальних", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 114,
+        "question": "Хто контролює фінансове управління держави?",
+        "answerOptions": [
+            { "text": "a. Банк Іспанії", "isCorrect": false },
+            { "text": "b. Податкове агентство", "isCorrect": false },
+            { "text": "c. Рахункова палата", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 115,
+        "question": "Кого обирають на загальних виборах?",
+        "answerOptions": [
+            { "text": "a. сенаторів та депутатів", "isCorrect": true },
+            { "text": "b. депутатів", "isCorrect": false },
+            { "text": "c. радників", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 116,
+        "question": "Зі скількох членів складається конгрес депутатів на даний час?",
+        "answerOptions": [
+            { "text": "a. 300", "isCorrect": false },
+            { "text": "b. 350", "isCorrect": true },
+            { "text": "c. 400", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 117,
+        "question": "Муніципалітети та провінції є частиною адміністрації:",
+        "answerOptions": [
+            { "text": "a. автономної", "isCorrect": false },
+            { "text": "b. місцевої", "isCorrect": true },
+            { "text": "c. центральної", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 118,
+        "question": "Найбільш населена автономна спільнота Іспанії:",
+        "answerOptions": [
+            { "text": "a. Андалусія", "isCorrect": true },
+            { "text": "b. Каталонія", "isCorrect": false },
+            { "text": "c. Кастилія і Леон", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 119,
+        "question": "Як називається організація, що захищає інтереси робітників?",
+        "answerOptions": [
+            { "text": "a. асоціація", "isCorrect": false },
+            { "text": "b. партія", "isCorrect": false },
+            { "text": "c. профспілка", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 120,
+        "question": "Хто з наступних особистостей був головою уряду Іспанії?",
+        "answerOptions": [
+            { "text": "a. Хосе Марія Аснар", "isCorrect": true },
+            { "text": "b. Мануель Фрага", "isCorrect": false },
+            { "text": "c. Долорес Ібаррурі", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 121,
+        "question": "Повноліття в Іспанії настає у 16 років.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": false },
+            { "text": "Неправда", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 122,
+        "question": "Іспанці, які отримують громадянство за місцем проживання, повинні чекати 3 роки, щоб голосувати на виборах.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": false },
+            { "text": "Неправда", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 123,
+        "question": "Молодь має право вільно брати участь у політичному розвитку країни.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": true },
+            { "text": "Неправда", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 124,
+        "question": "Діяльність політичних партій має бути демократичною.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": true },
+            { "text": "Неправда", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 125,
+        "question": "Можна змусити когось сказати, які його політичні чи релігійні погляди.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": false },
+            { "text": "Неправда", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 126,
+        "question": "Особі можна обмежити право вільно в'їжджати та виїжджати з Іспанії з ідеологічних міркувань.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": false },
+            { "text": "Неправда", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 127,
+        "question": "Початкова освіта (з 6 до 12 років) є безкоштовною та обов'язковою.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": true },
+            { "text": "Неправда", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 128,
+        "question": "Конституція гарантує право іспанців на гідне житло.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": true },
+            { "text": "Неправда", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 129,
+        "question": "В Іспанії поліція може увійти в будь-який будинок без судового рішення в будь-який час.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": false },
+            { "text": "Неправда", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 130,
+        "question": "Гарантується таємниця листування іспанців, за винятком судового рішення.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": true },
+            { "text": "Неправда", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 131,
+        "question": "Усі іспанці, як повнолітні, так і неповнолітні, мають право голосувати на виборах.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": false },
+            { "text": "Неправда", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 132,
+        "question": "Викладачі можуть вільно викладати в межах Конституції.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": true },
+            { "text": "Неправда", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 133,
+        "question": "Конституція визнає лише основні права іспанців.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": false },
+            { "text": "Неправда", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 134,
+        "question": "В Іспанії існує смертна кара.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": false },
+            { "text": "Неправда", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 135,
+        "question": "Закон обмежує доступ третіх осіб до персональних даних.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": true },
+            { "text": "Неправда", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 136,
+        "question": "Свобода преси обмежується повагою до честі людей.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": true },
+            { "text": "Неправда", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 137,
+        "question": "В Іспанії законом регулюються причини розлучення та розірвання шлюбу.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": true },
+            { "text": "Неправда", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 138,
+        "question": "Усі іспанці платять однакову суму податків.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": false },
+            { "text": "Неправда", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 139,
+        "question": "В Іспанії чоловіки та жінки мають однакові права.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": true },
+            { "text": "Неправда", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 140,
+        "question": "Обов'язкова освіта складається з двох етапів: початкової освіти та обов'язкової середньої освіти.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": true },
+            { "text": "Неправда", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 141,
+        "question": "В Іспанії є офіційна релігія.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": false },
+            { "text": "Неправда", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 142,
+        "question": "Державна медична допомога є безкоштовною.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": true },
+            { "text": "Неправда", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 143,
+        "question": "Державні органи повинні сприяти фізичному вихованню та спорту.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": true },
+            { "text": "Неправда", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 144,
+        "question": "В Іспанії визнано право на асоціацію.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": true },
+            { "text": "Неправда", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 145,
+        "question": "У разі страйку закон гарантує підтримку основних послуг громади.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": true },
+            { "text": "Неправда", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 146,
+        "question": "Робітники мають право на страйк.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": true },
+            { "text": "Неправда", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 147,
+        "question": "Свобода ідеології гарантована лише на частині національної території.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": false },
+            { "text": "Неправда", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 148,
+        "question": "Усі громадяни мають доступ до державної системи соціального забезпечення, за винятком безробітних.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": false },
+            { "text": "Неправда", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 149,
+        "question": "Кожен має право на належне для розвитку особистості довкілля, а також обов'язок його зберігати.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": true },
+            { "text": "Неправда", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 150,
+        "question": "Кожен має право висловлювати свою думку.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": true },
+            { "text": "Неправда", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 151,
+        "question": "Мінімальний вік для одруження в Іспанії — 12 років.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": false },
+            { "text": "Неправда", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 152,
+        "question": "Закон забороняє дискримінацію за будь-якими особистими чи соціальними обставинами.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": true },
+            { "text": "Неправда", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 153,
+        "question": "Державні органи гарантують захист прав споживачів.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": true },
+            { "text": "Неправда", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 154,
+        "question": "Згідно з Конституцією, відправлення правосуддя належить виключно іспанській державі.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": false },
+            { "text": "Неправда", "isCorrect": true }
+        ]
+    },
+    {
+        "questionNumber": 155,
+        "question": "Іспанці повинні допомагати у випадках катастроф або громадських лих.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": true },
+            { "text": "Неправда", "isCorrect": false }
+        ]
+    },
+    {
+        "questionNumber": 156,
+        "question": "В Іспанії громадяни можуть обирати, в якому місті вони хочуть жити.",
+        "answerOptions": [
+            { "text": "Правда", "isCorrect": true },
+            { "text": "Неправда", "isCorrect": false }
+        ]
     }
   ]
 }
