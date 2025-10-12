@@ -1,5 +1,5 @@
 // =======================================================
-// SCRIPT PRINCIPAL DEL CUESTIONARIO CCSE (VERSIÓN DEFINITIVA)
+// SCRIPT PRINCIPAL DEL CUESTIONARIO CCSE (VERSIÓN ROBUSTA)
 // =======================================================
 
 // --- VARIABLES GLOBALES ---
@@ -15,12 +15,10 @@ const resultMessage = document.getElementById('result-message');
 
 /**
  * 💡 FUNCIÓN DE INICIO
- * Se ejecuta cuando la página está lista para determinar qué test cargar.
  */
 window.onload = function() {
-    // Si no estamos en la página del quiz (ej. index.html), no hacemos nada.
     if (!document.body.contains(questionArea)) {
-        return;
+        return; // No estamos en la página del quiz
     }
 
     const params = new URLSearchParams(window.location.search);
@@ -31,21 +29,23 @@ window.onload = function() {
         return;
     }
 
-    // Construye la ruta al archivo de datos JSON.
-    // Esta ruta es relativa a la raíz del proyecto.
-    const dataFile = `data/${quizType}.json`;
+    // 🔑 CAMBIO CRÍTICO: Construimos una URL absoluta y directa al archivo en el repositorio.
+    // Esto evita los problemas de despliegue de GitHub Pages.
+    const repoURL = 'https://raw.githubusercontent.com/forkaizen2023-sys/ccse-test-practica/master';
+    const dataFile = `${repoURL}/data/${quizType}.json`;
+    
     loadQuizData(dataFile);
 };
 
 /**
- * Carga las preguntas de forma asíncrona desde un archivo JSON.
- * @param {string} fileName - La ruta al archivo JSON.
+ * Carga las preguntas de forma asíncrona desde una URL de JSON.
+ * @param {string} fileURL - La URL completa al archivo JSON.
  */
-async function loadQuizData(fileName) {
+async function loadQuizData(fileURL) {
     try {
-        const response = await fetch(fileName);
+        const response = await fetch(fileURL);
         if (!response.ok) {
-            throw new Error(`Error HTTP ${response.status}: No se pudo encontrar el archivo ${fileName}`);
+            throw new Error(`Error HTTP ${response.status}: No se pudo encontrar el archivo en ${fileURL}`);
         }
         const data = await response.json();
         quizData = data.questions;
