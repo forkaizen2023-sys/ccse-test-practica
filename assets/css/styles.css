@@ -23,9 +23,8 @@ body {
     padding: 20px;
     box-sizing: border-box;
     line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3 {
@@ -171,9 +170,6 @@ h1, h2, h3 {
 .support-button {
     background-color: #ffffff;
     color: var(--color-button-main);
-    font-weight: 600;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
 }
 
 .support-button:hover {
@@ -198,9 +194,6 @@ h1, h2, h3 {
 .guide-language-section h3 {
     margin-bottom: 10px;
     font-size: 1.2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .language-links a {
@@ -208,18 +201,121 @@ h1, h2, h3 {
     font-weight: 600;
     text-decoration: none;
     margin: 0 8px;
-    transition: color 0.2s ease;
-}
-
-.language-links a:hover {
-    color: var(--color-button-hover);
-    text-decoration: underline;
 }
 
 /* =======================================================
-   ESTILOS ESPECÍFICOS DEL QUIZ Y GUÍA
+   ESTILOS MEJORADOS PARA LOS BOTONES DEL QUIZ
    ======================================================= */
-/* (Aquí iría el resto de tu CSS para .quiz-container, .guide-card, etc., que no necesita cambios) */
+.quiz-container {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.question-text {
+    font-size: 1.4em; /* Ligeramente más grande */
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.answer-options {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Espacio uniforme entre botones */
+}
+
+.answer-options button {
+    display: flex; /* Permite alinear el texto y el icono */
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 0; /* Eliminado para usar 'gap' */
+    border: 1px solid #ced4da; /* Borde más sutil */
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    color: var(--color-text-primary);
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+/* 💅🏼 Elegancia: Efecto al pasar el cursor */
+.answer-options button:hover:not(:disabled) {
+    border-color: var(--color-button-main);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px var(--color-shadow-light);
+}
+
+/* 💅🏼 Elegancia: Iconos para feedback instantáneo */
+.answer-options button::after {
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-size: 1.2em;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.answer-options button.correct {
+    background-color: #eafaf1;
+    color: #23903c;
+    border-color: var(--color-correct);
+    font-weight: 600;
+}
+
+.answer-options button.incorrect {
+    background-color: #fbeee
+    color: #a02c2c;
+    border-color: var(--color-incorrect);
+}
+
+/* 💅🏼 Elegancia: Muestra los iconos de check y cross */
+.answer-options button.correct::after {
+    content: '✔';
+    color: var(--color-correct);
+    opacity: 1;
+}
+
+.answer-options button.incorrect::after {
+    content: '✖';
+    color: var(--color-incorrect);
+    opacity: 1;
+}
+
+.answer-options button:disabled {
+    cursor: default;
+}
+
+.quiz-controls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#next-button {
+    padding: 14px 28px;
+    border: none;
+    background-color: var(--color-button-main);
+    color: white;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#question-area .button-link {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ... (El resto de estilos de Guía, Navegación, etc. se mantienen) ... */
 
 /* =======================================================
    RESPONSIVIDAD (Media Query para Móviles)
@@ -229,4 +325,5 @@ h1, h2, h3 {
     .main-container, .menu-section, .support-section { padding: 20px; }
     .button-grid { grid-template-columns: 1fr; }
     h1 { font-size: 1.6em; }
+    .question-text { font-size: 1.15em; }
 }
