@@ -4,20 +4,18 @@
 
 ## ⚕️ For European Union Citizens
 
-If you are a citizen of the EU, EEA, or Switzerland, the process is straightforward once you have formalized your residency.
+If you are a citizen of the EU, EEA, or Switzerland, the process is straightforward once you formalize your residency.
 
 * **Step 1: Obtain the Green NIE (Registration Certificate)**
-    Apply for it at the Foreigners' Office ("Oficina de Extranjería") by appointment. You will need your passport, proof of financial means (work contract, insurance, etc.), and the [EX-18 form](https://www.inclusion.gob.es/web/migraciones/modelos-generales-de-solicitudes). The appointment is booked on the [Public Administrations website](https://sede.administracionespublicas.gob.es/icpplus/).
+    This is requested at the Foreigners' Office ("Oficina de Extranjería"). An online appointment is **mandatory**.
+    * **Link for Appointments:** [Public Administrations Office](https://icp.administracionelectronica.gob.es/icpplus/index.html)
 
 * **Step 2: Register with Social Security**
-    This is essential if you are going to work as an employee or self-employed. It is done at the Social Security General Treasury (TGSS) with your NIE and contract.
+    If you are going to work, this is an essential step done at the Social Security General Treasury (TGSS).
 
-* **Step 3: Go to Your Health Center**
-    Find your corresponding health center using the [GVA Center Finder](https://www.san.gva.es/es/web/dgaf/buscador-centros). You will need to bring:
-    * Your "Padrón" certificate.
-    * Your Passport and Green NIE.
-    * Your Social Security registration document.
-    They will issue a temporary SIP card on the spot, and the permanent one will arrive by mail.
+* **Step 3: Go to Your Local Health Center**
+    With your Padrón certificate, Green NIE, and Social Security document, find your nearest health center to apply for the card.
+    * **Health Center Finder Link:** [GVA Health Resources Finder](http://www.san.gva.es/web/dgas/sistemas-de-informacion-sanitaria)
 
 ---
 
@@ -26,19 +24,17 @@ If you are a citizen of the EU, EEA, or Switzerland, the process is straightforw
 The process depends on your residency status.
 
 * **Case A: With a Residence and Work Permit**
-    The process is very similar to that for EU citizens. You will need to present your **Padrón**, your **TIE** (Foreigner's Identity Card), passport, and Social Security registration document at your health center.
+    The process is very similar to that for EU citizens. You must present your **Padrón**, **TIE** (Foreigner's Identity Card), passport, and Social Security registration document at your health center.
 
 * **Case B: Without Legal Residence (Universal Access)**
-    Access is provided through the "Valencian Health Protection Program."
-    * **Requirements:** You must be registered on the "Padrón" for more than 3 months and have no other health coverage.
-    * **Documents:** Padrón certificate, passport, and a declaration of no insurance.
-    * **Coverage:** It includes primary care, emergency services, and specialized care, but may have limitations on high-cost treatments.
+    Access is provided through the "Valencian Health Protection Program." You need to prove you have been registered on the "Padrón" for more than 3 months and have no other health coverage.
 
 ---
 
-## 🔗 Useful Links and Phone Numbers
+## 🔗 Key Links and Phone Numbers
 
-* **Health Center Finder:** [www.san.gva.es/buscador-de-recursos](http://www.san.gva.es/buscador-de-recursos)
-* **SIP Card Information:** [Conselleria de Sanitat website](https://www.san.gva.es/es/web/tarjeta-sanitaria)
-* **Medical Appointment Booking:** [GVA Cita Previa website](https://san.gva.es/web/sas/cita-previa)
-* **Information Hotline:** **961 926 300**
+* **Official SIP Card Information:**
+    [Conselleria de Sanitat Website](https://www.san.gva.es/es/web/dgcal/tarjeta-sip)
+* **Booking a Doctor's Appointment:**
+    [GVA Salut Appointment Portal](https://www.san.gva.es/cita_previa/citaprevia_cas.html)
+* **Healthcare Information Hotline:** **961 926 300**
