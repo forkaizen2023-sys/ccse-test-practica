@@ -1,42 +1,40 @@
-Entornos Virtuales
-
-Son específicos de cada máquina y nunca deben subirse.
-
+# Entornos Virtuales
 .venv/
+venv/
 env/
 
-Caché de Python y archivos compilados
-
-Se generan automáticamente y no deben estar en el control de versiones.
-
+# Caché de Python y archivos compilados
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-Archivos de configuración de IDEs
-
-Son específicos de la configuración local de cada desarrollador.
-
+# Archivos de configuración de IDEs
 .vscode/
+.idea/
 
-Archivos de sistema operativo
-
+# Archivos de sistema operativo
 .DS_Store
 Thumbs.db
+desktop.ini
 
-Datos, Logs y Modelos
+# Datos, Logs y Salida (Añade carpetas específicas si las creas)
+# data/
+# logs/
+# results/
+# *.db
+# *.log
 
-Estos archivos son generados por el programa o contienen datos sensibles.
-
-Nunca se deben subir.
-
-data/
-logs/
-modelos/
-
-Archivos de entorno que contienen secretos (API Keys, contraseñas)
-
-El archivo .env NUNCA se sube.
-
+# Archivos de entorno que contienen secretos
 .env
+*.env.*
+secrets.json
+*.pem
+*.key
+
+# Dependencias de Node (si usas JS con npm/yarn)
+# node_modules/
+
+# Archivos de construcción o distribución
+# dist/
+# build/
